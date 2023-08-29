@@ -1,11 +1,11 @@
 const express = require('express');
 const fs = require('fs');
-const ProductManager = require('./ProductManager'); // Asegúrate de ajustar la ruta al archivo ProductManager
+const ProductManager = require('./productManager');
 
 const app = express();
-const PORT = 8080; // Puedes ajustar el puerto según tus preferencias
+const PORT = 8080;
 
-const productManager = new ProductManager('productos.json'); // Ajusta el nombre del archivo si es necesario
+const productManager = new ProductManager('productos.json');
 
 app.use(express.json());
 
